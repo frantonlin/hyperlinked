@@ -4,7 +4,7 @@
 body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
-  font-display: swap;
+  font-weight: 500;
 }
 
 @theme {
