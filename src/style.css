@@ -10,6 +10,12 @@ body {
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
+  --text-base: 1.87rem;
+  --text-base--line-height: 1.87rem;
+  --text-triple: 5.75rem;
+  --text-triple--line-height: 5.75rem;
+  --text-half: 0.91rem;
+  --text-half--line-height: 0.91rem;
 }
 
 @media (max-width: 768px) {
