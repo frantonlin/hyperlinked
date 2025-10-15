@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="🔗 hyperlinked">
   <meta name="twitter:description" content="a retro-futuristic girl edm + hyperpop party with dj frazzo">
   <meta name="twitter:image" content="https://hyperlinked.party/open-graph.jpg">
-  <link rel="stylesheet" crossorigin href="/assets/index-CzN8NoaL.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-BAOV7C9T.css">
 </head>
 
 <body>
@@ -296,20 +296,32 @@
 
         <!-- LOADER -->
         <div
-          class="h-[calc(2*var(--text-base--line-height)+0.2rem)] mt-[calc(6*var(--text-base--line-height)-0.03*var(--text-base--line-height))]">
+          class="drop-shadow-[-2.5px_-2.5px_0_rgb(255,255,255),2.5px_-2.5px_0_rgb(255,255,255),2.5px_2.5px_0_rgb(255,255,255),-2.5px_2.5px_0_rgb(255,255,255)]">
           <svg width="100%" height="100%"
-            class="drop-shadow-[-2.5px_-2.5px_0_rgb(255,255,255),2.5px_-2.5px_0_rgb(255,255,255),2.5px_2.5px_0_rgb(255,255,255),-2.5px_2.5px_0_rgb(255,255,255)]"
-            viewBox="-5 -5 447 61" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            class="h-[calc(2*var(--text-base--line-height)+0.57rem)] mt-[calc(6*var(--text-base--line-height)-0.15rem)]"
+            viewBox="-5 -5 452 66" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
             style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+            <title>coming soon</title>
             <style>
+              /*
+               * svg width: 442px
+               * viewbox margin to the left/right added for blur: 5px
+               * rendered svg width: 442px + 2*5px = 452px
+               * margin to the left/right of indicator area: 14px
+               * rendered margin to the left/right of indicator area: 14px + 5px = 19px
+               * space between indicators: 6px
+               * number of indicators: 15
+               *
+               * translate amount: (((452) - 19*2 - 6*14)/15 + 6)/452*100% = 6.194690265%
+               */
               @keyframes loader {
                 0% {
-                  transform: translateX(calc(-3*28px));
+                  transform: translateX(calc(-3*6.194690265%));
                 }
 
                 100% {
-                  transform: translateX(calc(16*28px));
+                  transform: translateX(calc(16*6.194690265%));
                 }
               }
 
