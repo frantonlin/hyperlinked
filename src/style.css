@@ -6,6 +6,11 @@ body {
   font-weight: 500;
 }
 
+html {
+  font-size: 21px;
+  --text-base--line-height: 39.5px;
+}
+
 @keyframes scroll-text {
   0% {
     transform: translateX(0);
