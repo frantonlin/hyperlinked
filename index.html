@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 
+<!-- PRINT POSTER, 8.5" x 11" = 634px x 820px -->
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/link.svg" />
@@ -292,7 +294,7 @@
       <div class="absolute min-w-fit">
         <!-- BLACK TEXT -->
         <div
-          class="text-center text-base font-semibold text-nowrap select-none text-black blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
+          class="text-center text-base font-semibold text-nowrap select-none text-black blur-[0.05rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
           <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br
             aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
           <p class="select-text"><span class="pr-[12.4rem]">a</span>retro-futuristic</p>
@@ -301,7 +303,8 @@
           <br aria-hidden="true">
           <br aria-hidden="true">
           <br aria-hidden="true">
-          <p class="select-text"><span class="pr-[20rem]">with</span></p>
+          <br aria-hidden="true">
+          <br aria-hidden="true"><!-- <p class="select-text"><span class="pr-[20rem]">with</span></p> -->
           <br aria-hidden="true">
           <br aria-hidden="true">
           <br aria-hidden="true">
@@ -309,16 +312,70 @@
           <br aria-hidden="true">
           <br aria-hidden="true">
           <br aria-hidden="true">
-          <span class="select-text float-left text-left mr-16">
-            <span class="pl-7">saturday 11/15</span><br>
-            <span class="pl-9">9pm–2am, 21+</span><br>
-            <span class="">$10–$15 cash cover</span>
-          </span>
-          <span class="select-text float-right text-right">
-            <br class="select-none" aria-hidden="true">
-            <span class="pr-2">52 church st</span><br>
-            cambridge, ma
-          </span>
+          <br aria-hidden="true">
+          <p>rsvp at <a href="https://hyperlinked.party/"
+              class="pointer-events-auto text-link-blue underline">hyperlinked.party</a></p>
+          <br aria-hidden="true">
+          <br aria-hidden="true">
+          <p class="w-[34.3rem] select-text">
+            <span class="float-left text-left">
+              <span class="pl-0">saturday 11/15</span><br>
+              <span class="pl-9.5">9pm–2am, 21+</span>
+            </span>
+            <span class="float-right text-right">
+              <span class="pr-4">52 church st</span><br>
+              <span class="pr-1">cambridge, ma</span>
+            </span>
+          </p>
+        </div>
+
+        <!-- QR CODE -->
+        <div
+          class="absolute top-[calc(13*var(--text-base--line-height)+0.12*var(--text-base--line-height))] left-0 right-0 h-[calc(10*var(--text-base--line-height)+5px)] drop-shadow-[-2.5px_-2.5px_0_rgb(255,255,255),2.5px_-2.5px_0_rgb(255,255,255),2.5px_2.5px_0_rgb(255,255,255),-2.5px_2.5px_0_rgb(255,255,255)] ">
+          <svg width="100%" height="100%" viewBox="-5 -5 210 210" class="-mt-[5px]" version="1.1" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+            xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <defs>
+              <filter id="blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="40" />
+              </filter>
+            </defs>
+            <g transform="matrix(0.025253,0,0,-0.025253,0,200)" filter="url(#blur)">
+              <path d="M0,7920L0,6240L1680,6240L1680,7920L0,7920ZM1440,7680L1440,6480L240,6480L240,7680L1440,7680Z"
+                style="fill-rule:nonzero;" />
+              <path d="M480,7440L480,6720L1200,6720L1200,7440L480,7440Z" style="fill-rule:nonzero;" />
+              <path
+                d="M2640,7920L2640,7680L2400,7680L2400,7200L2160,7200L2160,7440L1920,7440L1920,6960L2160,6960L2160,6480L1920,6480L1920,6240L2160,6240L2160,6480L2400,6480L2400,6000L2160,6000L2160,5760L1920,5760L1920,6000L1440,6000L1440,5760L1200,5760L1200,6000L720,6000L720,5760L1200,5760L1200,5520L1440,5520L1440,5280L1200,5280L1200,5040L960,5040L960,4800L720,4800L720,5040L480,5040L480,5280L960,5280L960,5520L480,5520L480,5280L240,5280L240,5520L0,5520L0,4800L720,4800L720,4080L960,4080L960,4320L1200,4320L1200,4560L1440,4560L1440,4320L1680,4320L1680,4080L1200,4080L1200,3600L960,3600L960,3840L480,3840L480,4080L240,4080L240,4560L0,4560L0,3840L240,3840L240,3600L480,3600L480,3360L0,3360L0,3120L240,3120L240,2880L0,2880L0,1920L480,1920L480,2160L960,2160L960,2400L1200,2400L1200,2160L1440,2160L1440,1920L1680,1920L1680,2160L1920,2160L1920,2640L1200,2640L1200,2880L960,2880L960,3120L720,3120L720,3600L960,3600L960,3360L1200,3360L1200,3120L1440,3120L1440,2880L1680,2880L1680,3120L1440,3120L1440,3360L1920,3360L1920,3120L2160,3120L2160,2640L2640,2640L2640,2400L2400,2400L2400,2160L2160,2160L2160,1920L1920,1920L1920,1440L2160,1440L2160,1200L1920,1200L1920,720L2160,720L2160,960L2400,960L2400,240L2160,240L2160,0L2400,0L2400,240L2640,240L2640,0L3120,0L3120,240L2880,240L2880,480L2640,480L2640,1200L3120,1200L3120,960L2880,960L2880,720L3120,720L3120,480L3600,480L3600,720L3840,720L3840,480L4080,480L4080,240L3840,240L3840,0L4080,0L4080,240L4320,240L4320,480L4560,480L4560,960L4800,960L4800,1440L5520,1440L5520,960L5760,960L5760,720L5520,720L5520,480L6000,480L6000,240L5520,240L5520,0L6480,0L6480,480L6000,480L6000,720L6240,720L6240,960L6480,960L6480,720L6720,720L6720,480L6960,480L6960,720L7200,720L7200,240L6720,240L6720,0L7440,0L7440,240L7920,240L7920,720L7680,720L7680,1440L7440,1440L7440,1680L7680,1680L7680,2160L7920,2160L7920,2640L7200,2640L7200,2160L7440,2160L7440,1920L6960,1920L6960,2400L6720,2400L6720,2640L6960,2640L6960,2880L7200,2880L7200,3120L7440,3120L7440,3360L7920,3360L7920,3600L7200,3600L7200,3840L7440,3840L7440,4080L7200,4080L7200,4320L6960,4320L6960,4080L6720,4080L6720,4560L7200,4560L7200,5040L7440,5040L7440,4560L7680,4560L7680,5040L7440,5040L7440,5280L7920,5280L7920,5520L7680,5520L7680,5760L7440,5760L7440,6000L6960,6000L6960,5760L6480,5760L6480,5520L6240,5520L6240,5760L6000,5760L6000,5520L5760,5520L5760,5760L5520,5760L5520,5520L5280,5520L5280,5760L5040,5760L5040,6480L4800,6480L4800,6720L5280,6720L5280,7440L5040,7440L5040,7680L4800,7680L4800,7920L4560,7920L4560,7680L4800,7680L4800,7440L4080,7440L4080,7680L4320,7680L4320,7920L4080,7920L4080,7680L3840,7680L3840,7440L3600,7440L3600,7200L3120,7200L3120,7440L3360,7440L3360,7680L3600,7680L3600,7920L3360,7920L3360,7680L3120,7680L3120,7920L2640,7920ZM2880,7680L2880,7440L2640,7440L2640,7680L2880,7680ZM2880,7200L2880,6960L3120,6960L3120,6720L3360,6720L3360,6960L3600,6960L3600,7200L4800,7200L4800,6960L4320,6960L4320,6720L4560,6720L4560,6480L4800,6480L4800,5520L4560,5520L4560,5280L5040,5280L5040,5520L5280,5520L5280,5280L5040,5280L5040,4800L4800,4800L4800,4560L5280,4560L5280,5040L5520,5040L5520,5280L5760,5280L5760,5040L5520,5040L5520,4560L5760,4560L5760,4800L6000,4800L6000,5040L6240,5040L6240,5280L6480,5280L6480,5040L6240,5040L6240,4800L6480,4800L6480,4320L6240,4320L6240,4080L6000,4080L6000,3840L6240,3840L6240,3600L6000,3600L6000,3360L6240,3360L6240,3120L6480,3120L6480,2880L6240,2880L6240,3120L6000,3120L6000,3360L5760,3360L5760,3600L5520,3600L5520,3120L5760,3120L5760,2880L6000,2880L6000,2640L6240,2640L6240,2400L6720,2400L6720,2160L5760,2160L5760,1920L5520,1920L5520,1680L4560,1680L4560,2160L4320,2160L4320,1920L4080,1920L4080,2160L2880,2160L2880,1920L3120,1920L3120,1680L3360,1680L3360,1440L3120,1440L3120,1680L2880,1680L2880,1440L2640,1440L2640,1200L2400,1200L2400,1440L2160,1440L2160,1920L2640,1920L2640,2160L2880,2160L2880,2640L2640,2640L2640,2880L2880,2880L2880,3120L2640,3120L2640,3360L2400,3360L2400,3120L2160,3120L2160,3600L1440,3600L1440,3360L1200,3360L1200,3600L1440,3600L1440,3840L1920,3840L1920,4320L1680,4320L1680,4560L1440,4560L1440,4800L1680,4800L1680,5040L1440,5040L1440,5280L1680,5280L1680,5040L1920,5040L1920,5520L1440,5520L1440,5760L1920,5760L1920,5520L2160,5520L2160,5760L2400,5760L2400,6000L2640,6000L2640,6480L2880,6480L2880,6240L3120,6240L3120,6720L2400,6720L2400,6960L2640,6960L2640,7200L2880,7200ZM7200,5520L7200,5040L6960,5040L6960,5280L6720,5280L6720,5520L7200,5520ZM1200,4800L1200,4560L960,4560L960,4800L1200,4800ZM6720,4080L6720,3840L6480,3840L6480,4080L6720,4080ZM6960,3600L6960,3360L6720,3360L6720,3600L6960,3600ZM720,3120L720,2880L960,2880L960,2400L480,2400L480,2160L240,2160L240,2880L480,2880L480,3120L720,3120ZM6960,3120L6960,2880L6720,2880L6720,3120L6960,3120ZM1680,2400L1680,2160L1440,2160L1440,2400L1680,2400ZM6720,1920L6720,1200L6000,1200L6000,1920L6720,1920ZM7200,1680L7200,1200L7440,1200L7440,960L7200,960L7200,1200L6960,1200L6960,1680L7200,1680ZM3840,1440L3840,960L3600,960L3600,720L3120,720L3120,960L3360,960L3360,1200L3600,1200L3600,1440L3840,1440ZM4320,1200L4320,720L4080,720L4080,1200L4320,1200ZM6960,960L6960,720L6720,720L6720,960L6960,960Z"
+                style="fill-rule:nonzero;" />
+              <path
+                d="M3600,6720L3600,6480L3360,6480L3360,6240L3120,6240L3120,6000L3360,6000L3360,5760L2880,5760L2880,6000L2640,6000L2640,5520L2160,5520L2160,5040L1920,5040L1920,4800L2400,4800L2400,4560L2160,4560L2160,4320L3120,4320L3120,4080L2880,4080L2880,3840L2640,3840L2640,3600L3120,3600L3120,3840L3360,3840L3360,4320L3600,4320L3600,4080L3840,4080L3840,3840L3600,3840L3600,3600L3360,3600L3360,3360L3600,3360L3600,3600L3840,3600L3840,2640L3600,2640L3600,3120L3360,3120L3360,2640L3120,2640L3120,2400L3360,2400L3360,2640L3600,2640L3600,2400L4560,2400L4560,2160L4800,2160L4800,2880L5040,2880L5040,2400L5280,2400L5280,2640L5520,2640L5520,2880L5040,2880L5040,3120L4800,3120L4800,3360L5040,3360L5040,3600L5520,3600L5520,3840L5040,3840L5040,4080L4800,4080L4800,4320L4320,4320L4320,3840L4560,3840L4560,3600L4800,3600L4800,3360L4320,3360L4320,3120L4080,3120L4080,3600L3840,3600L3840,3840L4080,3840L4080,4080L3840,4080L3840,4560L3360,4560L3360,4800L4080,4800L4080,4560L4560,4560L4560,4800L4800,4800L4800,5040L4560,5040L4560,5280L4320,5280L4320,5520L4560,5520L4560,6480L4320,6480L4320,5520L4080,5520L4080,5760L3840,5760L3840,5520L3600,5520L3600,6000L3360,6000L3360,6240L3600,6240L3600,6480L3840,6480L3840,6240L4080,6240L4080,6480L3840,6480L3840,6720L3600,6720ZM3120,5520L3120,5040L3360,5040L3360,5520L3600,5520L3600,5280L3840,5280L3840,5520L4080,5520L4080,5280L4320,5280L4320,4800L4080,4800L4080,5040L3360,5040L3360,4800L3120,4800L3120,4560L3360,4560L3360,4320L3120,4320L3120,4560L2880,4560L2880,5280L2640,5280L2640,4800L2400,4800L2400,5280L2640,5280L2640,5520L3120,5520ZM4560,3120L4560,2640L4320,2640L4320,3120L4560,3120Z"
+                style="fill-rule:nonzero;" />
+              <path d="M5760,4560L5760,4320L6240,4320L6240,4560L5760,4560Z" style="fill-rule:nonzero;" />
+              <path d="M2160,4080L2160,3600L2400,3600L2400,4080L2160,4080Z" style="fill-rule:nonzero;" />
+              <path d="M5760,3840L5760,3600L6000,3600L6000,3840L5760,3840Z" style="fill-rule:nonzero;" />
+              <path d="M2880,3360L2880,3120L3120,3120L3120,3360L2880,3360Z" style="fill-rule:nonzero;" />
+              <path d="M5760,2640L5760,2400L6000,2400L6000,2640L5760,2640Z" style="fill-rule:nonzero;" />
+              <path d="M5280,2160L5280,1920L5520,1920L5520,2160L5280,2160Z" style="fill-rule:nonzero;" />
+              <path d="M2640,1920L2640,1680L2400,1680L2400,1440L2640,1440L2640,1680L2880,1680L2880,1920L2640,1920Z"
+                style="fill-rule:nonzero;" />
+              <path d="M6240,1680L6240,1440L6480,1440L6480,1680L6240,1680Z" style="fill-rule:nonzero;" />
+              <path d="M5280,7920L5280,7680L5520,7680L5520,7920L5280,7920Z" style="fill-rule:nonzero;" />
+              <path
+                d="M5760,7920L5760,7440L5520,7440L5520,6480L5280,6480L5280,6240L5520,6240L5520,6480L5760,6480L5760,6000L6000,6000L6000,6480L5760,6480L5760,6720L6000,6720L6000,6960L5760,6960L5760,7200L6000,7200L6000,7920L5760,7920Z"
+                style="fill-rule:nonzero;" />
+              <path
+                d="M6240,7920L6240,6240L7920,6240L7920,7920L6240,7920ZM7680,7680L7680,6480L6480,6480L6480,7680L7680,7680Z"
+                style="fill-rule:nonzero;" />
+              <path d="M6720,7440L6720,6720L7440,6720L7440,7440L6720,7440Z" style="fill-rule:nonzero;" />
+              <path d="M7680,3120L7680,2880L7920,2880L7920,3120L7680,3120Z" style="fill-rule:nonzero;" />
+              <path d="M0,1680L0,0L1680,0L1680,1680L0,1680ZM1440,1440L1440,240L240,240L240,1440L1440,1440Z"
+                style="fill-rule:nonzero;" />
+              <path d="M480,1200L480,480L1200,480L1200,1200L480,1200Z" style="fill-rule:nonzero;" />
+              <path d="M5040,1200L5040,720L5280,720L5280,1200L5040,1200Z" style="fill-rule:nonzero;" />
+              <path d="M5040,480L5040,0L5280,0L5280,480L5040,480Z" style="fill-rule:nonzero;" />
+            </g>
+          </svg>
         </div>
 
         <!-- LOADER -->
@@ -413,11 +470,13 @@
       </div>
 
       <!-- DJ LINKS -->
-      <div
-        class="pointer-events-none absolute z-1 min-w-fit text-center text-base font-semibold text-nowrap select-none text-white underline blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]"
+      <!-- doubled because safari puts underlines beneath text-shadows -->
+      <!-- <div
+        class="pointer-events-none absolute z-1 min-w-fit text-center text-base font-semibold text-nowrap select-none text-white underline blur-[0.05rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]"
         aria-hidden="true">
         <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br
           aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
+        <br aria-hidden="true">
         <br aria-hidden="true">
         <br aria-hidden="true">
         <br aria-hidden="true">
@@ -437,9 +496,10 @@
         </p>
       </div>
       <div
-        class="pointer-events-none absolute z-1 min-w-fit text-center text-base font-semibold text-nowrap select-none text-link-blue underline blur-[0.03rem] visited:text-link-purple">
+        class="pointer-events-none absolute z-1 min-w-fit text-center text-base font-semibold text-nowrap select-none text-link-blue underline blur-[0.05rem] visited:text-link-purple">
         <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br /><br
           aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
+        <br aria-hidden="true">
         <br aria-hidden="true">
         <br aria-hidden="true">
         <br aria-hidden="true">
@@ -472,11 +532,11 @@
             </a>
           </span>
         </p>
-      </div>
+      </div> -->
 
-      <p class="absolute -bottom-2 right-0 text-half text-right m-1 blur-[0.03rem] text-gray-500">
+      <!-- <p class="absolute -bottom-2 right-0 text-half text-right m-1 blur-[0.05rem] text-gray-500">
         copyright 2025 frazzo
-      </p>
+      </p> -->
 
       <!-- LINE EFFECT -->
       <!-- A pattern that repeats every 1px vertically -->
