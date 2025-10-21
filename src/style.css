@@ -11,6 +11,16 @@ a {
   cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
 
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(11.69rem);
+  }
+}
+
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
