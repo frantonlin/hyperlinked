@@ -4,6 +4,11 @@ body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  cursor: url("/cursor-pointer_0-4.png") 0 4, auto;
+}
+
+a {
+  cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
 
 @theme {
