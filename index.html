@@ -41,9 +41,6 @@
       <!-- BACKGROUND TEXT -->
       <div class="min-w-fit text-center text-base text-nowrap select-none text-[#ecedf0] blur-[0.1rem]"
         aria-hidden="true">
-        <p>dnb hyperpop ukg baile funk techno bass dubstep jersey breakbeat house trap eurobeat trance dnb hyperpop ukg
-          baile funk techno bass dubstep jersey breakbeat house trap eurobeat trance dnb hyperpop ukg baile funk techno
-          bass dubstep jersey breakbeat house trap eurobeat trance dnb</p>
         <p>hyperpop ukg baile funk techno bass dubstep jersey breakbeat house trap eurobeat trance dnb hyperpop ukg
           baile funk techno bass dubstep jersey breakbeat house trap eurobeat trance dnb hyperpop ukg baile funk techno
           bass dubstep jersey breakbeat house trap eurobeat trance dnb hyperpop ukg baile funk techno bass dubstep
@@ -298,14 +295,6 @@
           class="text-center text-base font-semibold text-nowrap select-none text-black blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
           <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br
             aria-hidden="true"><br aria-hidden="true">
-          <p class="animate-[scroll-text_linear_6s_infinite] motion-reduce:animate-none" aria-hidden="true">
-            click to rsvp ^ click to rsvp ^ click to rsvp ^ click to
-            rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click
-            to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^
-            click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to
-            rsvp ^ click to rsvp
-          </p>
-          <span class="sr-only">click above to rsvp</span>
 
           <br aria-hidden="true">
           <br aria-hidden="true">
@@ -313,29 +302,103 @@
           <br aria-hidden="true">
           <p class="select-text"><span class="pr-[7.7rem]">girl edm + hyperpop</span>party</p>
           <br aria-hidden="true">
+          <p class="select-text"><span class="pl-[5.6rem] pr-[9.6rem]">in</span>boston, ma</p>
+        </div>
+
+        <!-- LOADER -->
+        <div
+          class="drop-shadow-[-2.5px_-2.5px_0_rgb(255,255,255),2.5px_-2.5px_0_rgb(255,255,255),2.5px_2.5px_0_rgb(255,255,255),-2.5px_2.5px_0_rgb(255,255,255)]">
+          <svg width="100%" height="100%"
+            class="h-[calc(2*var(--text-base--line-height)+0.57rem)] mt-[calc(3*var(--text-base--line-height)-0.15rem)] -mb-[0.42rem]"
+            viewBox="-5 -5 452 66" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+            <title>next party loading...</title>
+            <style>
+              /*
+               * svg width: 442px
+               * viewbox margin to the left/right added for blur: 5px
+               * rendered svg width: 442px + 2*5px = 452px
+               * margin to the left/right of indicator area: 14px
+               * rendered margin to the left/right of indicator area: 14px + 5px = 19px
+               * space between indicators: 6px
+               * number of indicators: 15
+               *
+               * translate amount: (((452) - 19*2 - 6*14)/15 + 6)/452*100% = 6.194690265%
+               */
+              @keyframes loader {
+                0% {
+                  transform: translateX(calc(-3*6.194690265%));
+                }
+
+                100% {
+                  transform: translateX(calc(16*6.194690265%));
+                }
+              }
+
+              #loader {
+                animation: loader 2.3s steps(19) infinite;
+              }
+            </style>
+            <defs>
+              <filter id="blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" />
+              </filter>
+            </defs>
+            <g filter="url(#blur)">
+              <g transform="matrix(0.9819,0,0,1,0.0723982,0)">
+                <path d="M446,11.556L446,44.444L438.444,52L11.556,52L4,44.444L4,11.556L11.556,4L438.444,4L446,11.556Z"
+                  style="fill:white;stroke:black;stroke-width:8.07px;" />
+              </g>
+              <rect x="14" y="11.5" width="414" height="33" style="fill:none;" />
+              <clipPath id="_clip1">
+                <rect x="14" y="11.5" width="414" height="33" />
+              </clipPath>
+              <g clip-path="url(#_clip1)">
+                <g id="loader">
+                  <g transform="matrix(1.22222,0,0,1.17857,-262.444,-7.35714)">
+                    <rect x="272" y="16" width="18" height="28" style="fill:url(#loaderRect);" />
+                  </g>
+                  <g transform="matrix(1.22222,0,0,1.17857,-290.444,-7.35714)">
+                    <rect x="272" y="16" width="18" height="28" style="fill:url(#loaderRect);" />
+                  </g>
+                  <g transform="matrix(1.22222,0,0,1.17857,-318.444,-7.35714)">
+                    <rect x="272" y="16" width="18" height="28" style="fill:url(#loaderRect);" />
+                  </g>
+                </g>
+              </g>
+            </g>
+            <defs>
+              <linearGradient id="loaderRect" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(18,0,-0,18.6667,272,30)">
+                <stop offset="0" style="stop-color:rgb(0,0,126);stop-opacity:1" />
+                <stop offset="0.1" style="stop-color:rgb(0,0,174);stop-opacity:1" />
+                <stop offset="0.21" style="stop-color:rgb(0,0,224);stop-opacity:1" />
+                <stop offset="0.5" style="stop-color:rgb(0,0,248);stop-opacity:1" />
+                <stop offset="0.79" style="stop-color:rgb(0,0,225);stop-opacity:1" />
+                <stop offset="0.9" style="stop-color:rgb(0,0,176);stop-opacity:1" />
+                <stop offset="1" style="stop-color:rgb(0,0,128);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div
+          class="text-center text-base font-semibold text-nowrap select-none text-black blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
           <br aria-hidden="true">
-          <p class="select-text"><span class="pr-[3rem]">with</span></p>
           <br aria-hidden="true">
           <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <p class="w-[34.7rem] select-text mx-auto">
-            <span class="float-left text-left">
-              <span class="pl-0">saturday 11/15</span><br>
-              <span class="pl-10">9pm–2am, 21+</span>
-            </span>
-            <span class="float-right text-right">
-              <span class="pr-3.5">52 church st</span><br>
-              <span class="pr-2">cambridge, ma</span>
+          <p class="pr-[2.5rem]"><span class="select-text">v1 (11.15.2025)</span> . . . . . . . . .
+            <span class="relative">
+              <span aria-hidden="true">photos</span>
+              <span class="absolute left-0 select-text text-shadow-none">
+                <a href="https://drive.google.com/drive/folders/12idryL9NtZrw5Kh03miC19TR70oF24hV?usp=drive_link"
+                  target="_blank" class="pointer-events-auto text-link-blue underline visited:text-link-purple">
+                  photos
+                </a>
+              </span>
             </span>
           </p>
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <p class="select-text">$10 cash cover, $15 after 11pm</p>
         </div>
       </div>
 
@@ -349,68 +412,6 @@
         <div
           class="pointer-events-none absolute h-full w-full mask-radial-[20%_100%] mask-radial-from-transparent mask-radial-from-40% mask-radial-to-black mask-radial-to-90% mask-radial-at-[50%_50%] backdrop-blur-sm">
         </div>
-      </div>
-
-      <!-- DJ LINKS -->
-      <div
-        class="pointer-events-none absolute min-w-fit text-center text-base font-semibold text-nowrap select-none text-white underline blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]"
-        aria-hidden="true">
-        <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br
-          aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <p>
-          <span class="pl-[16.5rem]">icyfevur</span>
-        </p>
-        <br aria-hidden="true">
-        <p>
-          <span class="pl-[20rem]">dj frazzo</span>
-        </p>
-        <br aria-hidden="true">
-        <p>
-          <span class="pl-[17rem]">kate kush</span>
-        </p>
-      </div>
-      <div
-        class="pointer-events-none absolute min-w-fit text-center text-base font-semibold text-nowrap select-none text-link-blue underline blur-[0.03rem] visited:text-link-purple">
-        <br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true"><br /><br
-          aria-hidden="true"><br aria-hidden="true"><br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <br aria-hidden="true">
-        <p class="select-text">
-          <span class="pl-[16.5rem]">
-            <a href="https://www.instagram.com/icyfevur/" target="_blank"
-              class="pointer-events-auto text-link-blue underline visited:text-link-purple">
-              icyfevur
-            </a>
-          </span>
-        </p>
-        <br aria-hidden="true">
-        <p class="select-text">
-          <span class="pl-[20rem]">
-            <a href="https://www.instagram.com/djfrazzo/" target="_blank"
-              class="pointer-events-auto text-link-blue underline visited:text-link-purple">
-              dj frazzo
-            </a>
-          </span>
-        </p>
-        <br aria-hidden="true">
-        <p class="select-text">
-          <span class="pl-[17rem]">
-            <a href="https://www.instagram.com/_kate_kush/" target="_blank"
-              class="pointer-events-auto text-link-blue underline visited:text-link-purple">
-              kate kush
-            </a>
-          </span>
-        </p>
       </div>
 
       <p class="absolute -bottom-2 right-0 text-half text-right m-1 blur-[0.03rem] text-gray-500">
