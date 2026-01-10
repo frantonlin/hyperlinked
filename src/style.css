@@ -21,6 +21,30 @@ a {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translate(-100%, 100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+}
+
+@keyframes shimmer-pause {
+  0% {
+    transform: translate(-100%, 100%) rotate(45deg);
+  }
+
+  25% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+}
+
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
@@ -34,7 +58,7 @@ a {
 
   --top-lines: 4;
   --hidden-top-lines: 0;
-  --logo-bump-lines: 0;
+  --join-button-lines: 4;
 }
 
 @media (max-width: 1536px) {
@@ -72,7 +96,6 @@ a {
   html {
     --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height));
-    --logo-bump-lines: 1;
-    --hidden-top-lines: 1;
+    --join-button-lines: 3;
   }
 }
