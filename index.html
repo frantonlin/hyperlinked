@@ -307,14 +307,21 @@
         </a>
       </h1>
 
-      <!-- JOIN NOW BUTTON -->
+      <!-- ACCEPT INVITATION -->
       <a href="https://partiful.com/e/qoZbC4cU1iyrIZnnaR71" target="_blank" class="
-        absolute inline-block top-[calc((var(--top-lines)+var(--join-button-lines))*var(--text-base--line-height)+0.09*var(--text-base--line-height))] -mt-[0.5rem] left-1/2 transform -translate-x-1/2
+        absolute inline-block top-[calc((var(--top-lines)+var(--join-button-lines))*var(--text-base--line-height)+0.09*var(--text-base--line-height))] -mt-[0.8rem] left-1/2 transform -translate-x-1/2
         drop-shadow-[-2.5px_-2.5px_0.06rem_rgb(255,255,255),2.5px_-2.5px_0.06rem_rgb(255,255,255),2.5px_2.5px_0.06rem_rgb(255,255,255),-2.5px_2.5px_0.06rem_rgb(255,255,255)]
-        z-2 text-base font-semibold text-white bg-gradient-to-b from-[#93C744] from-48% to-[#78BC16] to-52% border-2 border-[#693]
-        px-[2.267rem] py-[0.283rem] overflow-hidden
+        shadow-[0_1px_3px_rgba(0,0,0,0)]
+        z-2 text-base font-semibold text-white text-shadow-[0_1px_1px_rgba(0,0,0,0.35)] text-nowrap
+        bg-[#287bbc] bg-gradient-to-b from-[#287bbc] to-[#23639a] border border-[#23639a]
+        px-[2.267rem] py-[0.5rem] overflow-hidden rounded-sm
+        active:bg-[#2672ae] active:from-[#2672ae] active:to-[#1e4f7e] active:shadow-[0_1px_3px_rgba(0,0,0,0.25)]
         before:pointer-events-none before:absolute before:inset-0 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,0.35),transparent)] before:opacity-0 hover:before:opacity-100
         /* Mouse / trackpad */
+        [@media(hover:hover)]:hover:bg-[#2672ae]
+        [@media(hover:hover)]:hover:from-[#2672ae]
+        [@media(hover:hover)]:hover:to-[#1e4f7e]
+        [@media(hover:hover)]:hover:shadow-[0_1px_3px_rgba(0,0,0,0.25)]
         [@media(hover:hover)]:hover:before:opacity-100
         [@media(hover:hover)]:hover:before:animate-[shimmer_1.25s_forwards]
         /* Touch */
@@ -323,7 +330,7 @@
         /* Reduced motion */
         [@media(prefers-reduced-motion:reduce)]:before:animate-none
         ">
-        Join Now
+        Accept invitation
       </a>
 
       <!-- BODY TEXT -->
