@@ -96,6 +96,7 @@ a {
   html {
     --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height));
+    --hidden-top-lines: 1;
     --join-button-lines: 3;
   }
 }
