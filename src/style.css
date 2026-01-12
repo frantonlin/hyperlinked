@@ -70,7 +70,7 @@ html {
 
   /* For small computers */
   html {
-    --hidden-top-lines: 2;
+    --hidden-top-lines: 0;
   }
 }
 
