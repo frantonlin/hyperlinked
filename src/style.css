@@ -21,34 +21,82 @@ a {
   }
 }
 
+@keyframes shimmer {
+  0% {
+    transform: translate(-100%, 100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+}
+
+@keyframes shimmer-pause {
+  0% {
+    transform: translate(-100%, 100%) rotate(45deg);
+  }
+
+  25% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(100%, -100%) rotate(45deg);
+  }
+}
+
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
   --text-base: 1.87rem;
   /* Safari is inconsistent with decimal line heights, so manually round 16px * 1.87 = 30px */
   --text-base--line-height: 30px;
-  --text-triple: 5.75rem;
-  --text-triple--line-height: calc(3*var(--text-base--line-height));
+  --text-heading: 5.75rem;
+  --text-heading--line-height: calc(3*var(--text-base--line-height));
   --text-half: 0.91rem;
   --text-half--line-height: calc(0.5*var(--text-base--line-height));
+
+  --top-lines: 4;
+  --hidden-top-lines: 0;
+  --join-button-lines: 4;
+}
+
+@media (max-width: 1536px) {
+
+  /* For small computers */
+  html {
+    --hidden-top-lines: 2;
+  }
 }
 
 @media (max-width: 768px) {
 
-  /* For tablets and smaller */
+  /* For tablets */
   html {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
+    --hidden-top-lines: 0;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 660px) {
 
   /* For mobile phones */
   html {
     font-size: 10px;
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+
+  /* For small mobile phones */
+  html {
+    --text-heading: 3.83rem;
+    --text-heading--line-height: calc(2*var(--text-base--line-height));
+    --hidden-top-lines: 1;
+    --join-button-lines: 3;
   }
 }
