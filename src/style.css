@@ -65,7 +65,11 @@ a {
 
   /* For small computers */
   html {
-    --hidden-top-lines: 2;
+    --hidden-top-lines: 0;
+    font-size: 13px;
+    /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
+    --text-base--line-height: 24.3px;
+    /* --text-base--line-height: calc(var(--font-size) * 1.87); */
   }
 }
 
@@ -76,7 +80,7 @@ a {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
-    --hidden-top-lines: 0;
+    --hidden-top-lines: 1;
   }
 }
 
