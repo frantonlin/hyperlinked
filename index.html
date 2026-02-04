@@ -41,7 +41,7 @@
 
   <div class="w-lvw overflow-hidden bg-white">
     <div
-      class="relative -top-[calc(var(--hidden-top-lines)*var(--text-base--line-height)+0.5rem)] flex max-h-svh min-h-[calc(var(--text-base)*26-0.7rem)] justify-center">
+      class="relative -top-[calc(var(--hidden-top-lines)*var(--text-base--line-height)+0.5rem)] flex max-h-svh min-h-[calc(var(--text-base)*31-0.7rem)] justify-center">
       <!-- BACKGROUND TEXT -->
       <div class="min-w-fit text-center text-base text-nowrap select-none text-[#ecedf0] blur-[0.1rem]"
         aria-hidden="true">
@@ -304,9 +304,10 @@
       </h1>
 
       <!-- BODY TEXT -->
-      <div class="absolute w-lg top-[calc((var(--top-lines)+5)*var(--text-base--line-height))]">
-        <div
-          class="text-center text-base font-semibold text-nowrap select-none text-black blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
+      <div
+        class="absolute w-lg top-[calc((var(--top-lines)+5)*var(--text-base--line-height))] blur-[0.03rem]
+               text-base text-black font-semibold text-nowrap select-none text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
+        <div class="text-center">
           <p class="select-text"><span class="pr-[12.4rem]">a</span>retro-futuristic</p>
           <br aria-hidden="true">
           <p class="select-text"><span class="pr-[7.7rem]">girl edm + hyperpop</span>party</p>
@@ -392,17 +393,18 @@
           </svg>
         </div>
 
+        <br aria-hidden="true">
+        <br aria-hidden="true">
+        <br aria-hidden="true">
+
         <!-- PREVIOUS EVENTS -->
-        <div
-          class="w-full text-three-quarters font-semibold text-nowrap select-none text-black blur-[0.03rem] text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
-          <br aria-hidden="true">
+        <div class="w-full text-three-quarters">
           <p class="select-text text-base flex justify-center">⌄ ⌄ ⌄ ⌄ ⌄ previous events ⌄ ⌄ ⌄ ⌄ ⌄</p>
           <br aria-hidden="true">
-          <div class="w-full *:flex *:justify-between">
-            <p class="flex items-center gap-2">
-              <span class="select-text">hyperLinkedin (2026.1.31)</span>
+          <div class="grid grid-cols-[min-content_auto] gap-x-4 justify-items-start">
+            <div class="select-text">2026.1.31</div>
+            <div class="flex items-center gap-2 w-full min-w-0">
+              <span class="select-text">hyperLinkedin</span>
               <span class="flex-1 overflow-hidden" aria-hidden="true">
                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
               </span>
@@ -417,9 +419,11 @@
                   </span>
                 </span>
               </span>
-            </p>
-            <p class="flex items-center gap-2">
-              <span class="select-text">v1 (2025.11.15)</span>
+            </div>
+
+            <div class="select-text">2025.11.15</div>
+            <div class="flex items-center gap-2 w-full min-w-0">
+              <span class="select-text">v1</span>
               <span class="flex-1 overflow-hidden" aria-hidden="true">
                 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
               </span>
@@ -442,11 +446,10 @@
                   </span>
                 </span>
               </span>
-            </p>
+            </div>
           </div>
-          <br aria-hidden="true">
-          <br aria-hidden="true">
         </div>
+
       </div>
 
       <!-- VIGNETTE BLUR -->
