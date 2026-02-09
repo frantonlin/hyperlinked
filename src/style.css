@@ -49,7 +49,7 @@ a {
   --text-half: 0.91rem;
   --text-half--line-height: calc(0.5*var(--text-base--line-height));
 
-  --top-lines: 4;
+  --top-lines: 5;
   --hidden-top-lines: 0;
   --cta-button-lines: 4;
   --min-lines: 37;
