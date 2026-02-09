@@ -21,28 +21,9 @@ a {
   }
 }
 
-@keyframes shimmer {
-  0% {
-    transform: translate(-100%, 100%) rotate(45deg);
-  }
-
-  100% {
-    transform: translate(100%, -100%) rotate(45deg);
-  }
-}
-
-@keyframes shimmer-pause {
-  0% {
-    transform: translate(-100%, 100%) rotate(45deg);
-  }
-
-  25% {
-    transform: translate(100%, -100%) rotate(45deg);
-  }
-
-  100% {
-    transform: translate(100%, -100%) rotate(45deg);
-  }
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }
 
 @theme {
@@ -65,6 +46,10 @@ a {
 
   --top-lines: 4;
   --hidden-top-lines: 0;
+  --cta-button-lines: 4;
+
+  --font-hyperlinked: "Inter Tight", sans-serif;
+  --font-cyber: "Orbitron", "Inter Tight", sans-serif
 }
 
 @media (max-width: 1536px) {
@@ -104,5 +89,6 @@ a {
     /* --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height)); */
     --hidden-top-lines: 0;
+    /* --cta-button-lines: 3; */
   }
 }
