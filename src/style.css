@@ -47,7 +47,7 @@ a {
   --top-lines: 4;
   --hidden-top-lines: 0;
   --cta-button-lines: 4;
-  --min-lines: 37;
+  --min-lines: 39;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
   --font-cyber: "Orbitron", "Inter Tight", sans-serif
@@ -58,6 +58,7 @@ a {
   /* For small computers */
   html {
     --hidden-top-lines: 2;
+    --min-lines: 37;
   }
 }
 
