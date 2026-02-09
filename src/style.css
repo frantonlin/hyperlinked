@@ -7,6 +7,11 @@ body {
   cursor: url("/cursor-pointer_0-4.png") 0 4, auto;
 }
 
+html {
+  font-size: 21px;
+  --text-base--line-height: 39.5px;
+}
+
 a {
   cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
