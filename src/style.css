@@ -47,6 +47,7 @@ a {
   --top-lines: 4;
   --hidden-top-lines: 0;
   --cta-button-lines: 4;
+  --min-lines: 37;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
   --font-cyber: "Orbitron", "Inter Tight", sans-serif
@@ -68,6 +69,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
     --hidden-top-lines: 0;
+    --min-lines: 39;
   }
 }
 
@@ -79,6 +81,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
     --hidden-top-lines: 0;
+    --min-lines: 40;
   }
 }
 
