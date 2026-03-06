@@ -4,11 +4,11 @@ body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  cursor: url("/cursor-pointer_0-4.png") 0 4, auto;
+  cursor: url("/cursor-real-finger_2-12.png") 2 12, auto;
 }
 
 a {
-  cursor: url("/cursor-hand_24-4.png") 24 4, auto;
+  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
 }
 
 @keyframes scroll-text {
@@ -57,7 +57,7 @@ input[type="range"].slideToUnlock::-webkit-slider-thumb {
   height: 100%;
   position: relative;
   pointer-events: auto;
-  cursor: url("/cursor-hand_24-4.png") 24 4, auto;
+  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
 }
 
 input[type="range"].slideToUnlock::-webkit-slider-runnable-track {
@@ -67,17 +67,15 @@ input[type="range"].slideToUnlock::-webkit-slider-runnable-track {
 input[type="range"].slideToUnlock::-moz-range-thumb {
   border-width: 0;
   border-radius: 7px;
-  /* background-color: green; */
   background-image: url("/slider-thumb.png");
   background-size: cover;
   background-position: center;
-  /* background: linear-gradient(#fafafa 0%, #dedede 50%, #cfcfcf 51%, #a3a3a3 100%); */
   z-index: 1;
   width: 24.8%;
   height: 90%;
   position: relative;
   pointer-events: auto;
-  cursor: url("/cursor-hand_24-4.png") 24 4, auto;
+  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
 }
 
 @theme {
