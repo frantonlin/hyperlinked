@@ -550,20 +550,23 @@
     unlockSlider.ontouchstart = onSliderPressed;
 
     function onSliderChange(value) {
-      updateSlideTextOpacity(value);
+      if (value == 100) {
+        unlock();
+      } else {
+        updateSlideTextOpacity(value);
+      }
     }
 
     function onSliderRelease() {
-      let value = this.value;
-      if (value == 100) {
-        unlock();
+      if (this.value !== 100) {
+        let value = this.value;
+        document.init = setInterval(function () {
+          if (unlockSlider.value != 0) {
+            unlockSlider.value = value--;
+            updateSlideTextOpacity(value);
+          }
+        }, 1);
       }
-      document.init = setInterval(function () {
-        if (unlockSlider.value != 0) {
-          unlockSlider.value = value--;
-          updateSlideTextOpacity(value);
-        }
-      }, 1);
     }
 
     function onSliderPressed() {
