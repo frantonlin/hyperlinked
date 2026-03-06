@@ -33,7 +33,7 @@
   <meta name="twitter:title" content="🔗 hyperlinked">
   <meta name="twitter:description" content="a retro-futuristic girl edm + hyperpop party with dj frazzo">
   <meta name="twitter:image" content="https://hyperlinked.party/open-graph.jpg">
-  <link rel="stylesheet" crossorigin href="/assets/index-ClNMNBSr.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-EJSiwbXa.css">
 </head>
 
 <!-- filter-[url(#hyperdrive)] -->
@@ -356,7 +356,7 @@
           <img src="/ipod-touch.png" class="w-full" />
           <div class="absolute h-[13%] bottom-[16.1%] left-[7%] right-[7%] flex justify-center items-center">
             <div
-              class="@container relative w-full h-[52%] m-[6.1%] flex items-center justify-end bg-linear-to-b from-black to-[#1f1f1f] rounded-[5%/30%] p-[1.5px] border border-white/30 overflow-hidden">
+              class="@container relative w-full h-[52%] m-[6.1%] flex items-center justify-end bg-gradient-to-b from-black to-[#1f1f1f] rounded-[5%/30%] p-[1.5px] border border-white/30 overflow-hidden">
               <span class="slide-text mr-[10%] text-[10cqi] text-transparent whitespace-nowrap max-w-full select-none
                            bg-clip-text bg-size-[200%_auto] bg-linear-[to_left,#4d4d4d_0%,#4d4d4d_40%,white_50%,#4d4d4d_60%,#4d4d4d_100%] animate-[shimmer_3s_linear_infinite] transition-opacity duration-300
             ">slide to rsvp</span>
@@ -551,13 +551,13 @@
 
     function onSliderChange(value) {
       updateSlideTextOpacity(value);
-      if (value == 100) {
-        unlock();
-      }
     }
 
     function onSliderRelease() {
       let value = this.value;
+      if (value == 100) {
+        unlock();
+      }
       document.init = setInterval(function () {
         if (unlockSlider.value != 0) {
           unlockSlider.value = value--;
