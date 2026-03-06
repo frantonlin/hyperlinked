@@ -43,19 +43,25 @@
   <!-- Fix to show white instead of line effect past scroll limits -->
   <div class="size-full bg-white fixed top-0"></div>
 
-  <div class="w-full overflow-hidden bg-white font-hyperlinked">
-    <div class="absolute grid h-screen w-full grid-cols-2 grid-rows-2">
-      <div class="bg-[#FCB81D]">
-        <img src="/silhouette-1.png" alt="dancing silhouette 1" class="w-full h-full object-contain object-bottom" />
+  <div class="w-full bg-[#1699E3] font-hyperlinked text-white">
+    <div class="absolute h-[130svh] w-full">
+      <div class="grid h-[100svh] w-full grid-cols-2 grid-rows-2">
+        <div class="bg-[#FCB81D]">
+          <img src="/silhouette-1.png" alt="dancing silhouette 1" class="w-full h-full object-contain object-bottom" />
+        </div>
+        <div class="bg-[#1699E3]">
+          <img src="/silhouette-2.png" alt="dancing silhouette 2" class="w-full h-full object-contain object-bottom" />
+        </div>
+        <div class="bg-[#EB529A]">
+          <img src="/silhouette-3.png" alt="dancing silhouette 3" class="w-full h-full object-contain object-bottom" />
+        </div>
+        <div class="bg-[#A2CB3C]">
+          <img src="/silhouette-4.png" alt="dancing silhouette 4" class="w-full h-full object-contain object-bottom" />
+        </div>
       </div>
-      <div class="bg-[#1699E3]">
-        <img src="/silhouette-2.png" alt="dancing silhouette 2" class="w-full h-full object-contain object-bottom" />
-      </div>
-      <div class="bg-[#EB529A]">
-        <img src="/silhouette-3.png" alt="dancing silhouette 3" class="w-full h-full object-contain object-bottom" />
-      </div>
-      <div class="bg-[#A2CB3C]">
-        <img src="/silhouette-4.png" alt="dancing silhouette 4" class="w-full h-full object-contain object-bottom" />
+      <div class="grid h-[30svh] w-full grid-cols-2 grid-rows-1">
+        <div class="bg-[#FCB81D]"></div>
+        <div class="bg-[#1699E3]"></div>
       </div>
     </div>
     <div
@@ -301,7 +307,7 @@
             </g>
           </svg><span class="mx-1 blur-[0.06rem]">hyperlinked</span>
         </span> -->
-        <a href="https://partiful.com/e/ykqt3x0SVZZnhVpP6VTd" target="_blank" class="absolute text-white underline">
+        <a href="https://partiful.com/e/ykqt3x0SVZZnhVpP6VTd" target="_blank" class="absolute underline">
           <svg height="71" viewBox="-10 0 115 164" fill="currentColor"
             class="-mt-0.5 inline h-[calc(0.887*var(--text-heading))]" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
@@ -327,37 +333,87 @@
         iPod Music
       </a> -->
 
-      <!-- ENABLE HYPERDRIVE -->
-      <!-- <a href="https://partiful.com/e/ykqt3x0SVZZnhVpP6VTd" target="_blank" class="
-        peer z-3
-        h-12 w-81 hover:scale-105
-        absolute flex items-center justify-center top-[calc((var(--top-lines)+var(--cta-button-lines))*var(--text-base--line-height)+0.09*var(--text-base--line-height))] -mt-[0.8rem] left-1/2 transform -translate-x-1/2
-        drop-shadow-[-2.5px_-2.5px_0.06rem_rgb(255,255,255),2.5px_-2.5px_0.06rem_rgb(255,255,255),2.5px_2.5px_0.06rem_rgb(255,255,255),-2.5px_2.5px_0.06rem_rgb(255,255,255)]
-        text-base font-semibold text-[#23E9F6] hover:text-[#cefafd] text-shadow-[0_1px_1px_rgba(0,0,0,0.35)] text-nowrap
-        bg-[#00132C]
-        rounded-xl
-        shadow-[0_0_8px_#23E9F6]/100 hover:shadow-[0_0_200px_#cefafd]/50 transition-all duration-1000 hover:duration-100
-        ">
-        enable hyperdrive
-      </a>
-      <span
-        class="h-12 w-81 peer-hover:scale-x-[var(--scale-x)] peer-hover:scale-y-[var(--scale-y)] transition-transform duration-400 ease-in transform-gpu
-        absolute flex items-center justify-center top-[calc((var(--top-lines)+var(--cta-button-lines))*var(--text-base--line-height)+0.09*var(--text-base--line-height))] -mt-[0.8rem] left-1/2 transform -translate-x-1/2">
-        <span class="hyperdrive-underlay absolute inset-2 bg-[#23E9F6] blur-md rounded-full"></span>
-      </span>
-      <span class="z-2 pointer-events-none h-12 w-81 peer-hover:scale-x-[calc(var(--scale-x)*1.5)] peer-hover:scale-y-[calc(var(--scale-y)*1.5)] transition-all duration-300 ease-in transform-gpu
-        absolute flex items-center justify-center top-[calc((var(--top-lines)+var(--cta-button-lines))*var(--text-base--line-height)+0.09*var(--text-base--line-height))] -mt-[0.8rem] left-1/2 transform -translate-x-1/2
-">
-        <span class="hyperdrive-underlay absolute inset-2 rounded-full backdrop-blur-[0.006rem]"></span>
-      </span> -->
-
       <div class="absolute flex justify-center w-full top-[calc((var(--top-lines)+4)*var(--text-base--line-height))]">
-        <div class="relative w-[30vh] min-w-68">
+        <!-- <div class="z-1 absolute w-[calc(40vh*1.95)] bg-red-500/40 top-1/2 text-center text-base">
+          <span>saturday 3/28</span>
+          <span>9pm–2am, 21+</span>
+        </div> -->
+        <div class="w-9 text-base [writing-mode:sideways-lr] flex justify-around">
+          <span>saturday 3/28</span>
+          <span>9pm–2am, 21+</span>
+        </div>
+        <div class="relative w-[40vh] min-w-80 @container">
           <img src="/ipod-touch.png" class="w-full" />
+          <div class="absolute h-[13%] top-[18.7%] left-[7%] right-[7%]
+          font-light text-[15cqw] text-justify flex items-center justify-center
+          ">
+            TOUCH
+          </div>
+          <div class="absolute h-[6.7%] top-[31.8%] left-[7%] right-[7%]
+          font-medium text-[4.5cqw] leading-none px-[3%] py-[2%] flex
+          ">
+            <img src="/Calendar.png">
+            <div class="ml-[3%] flex justify-between items-baseline w-full h-full">
+              <span>
+                a y2k-themed hyperpop<br>+ girl edm party
+              </span>
+              <span class="font-regular text-[3.5cqw] text-nowrap ">
+                on 3/28
+              </span>
+            </div>
+          </div>
+          <div class="absolute h-[6.7%] top-[38.6%] left-[7%] right-[7%]
+          font-medium text-[4.5cqw] leading-none px-[3%] py-[2%] flex gap-[3%] items-baseline
+          ">
+            <img src="/iMessage.png" class="self-stretch">
+            <div class="flex flex-col  h-full w-full justify-between truncate">
+              <p>
+                DJ Bimbo Jackie
+              </p>
+              <p class="text-[3.5cqw] leading-[4cqw] font-light text-white/80 text-nowrap truncate">
+                hey bestie r u coming??
+              </p>
+            </div>
+            <span class="font-regular text-[3.5cqw] text-nowrap ">
+              4:54 PM
+            </span>
+          </div>
+          <div class="absolute h-[6.7%] top-[45.4%] left-[7%] right-[7%]
+          font-medium text-[4.5cqw] leading-none px-[3%] py-[2%] flex gap-[3%] items-baseline
+          ">
+            <img src="/iMessage.png" class="self-stretch">
+            <div class="flex flex-col  h-full w-full justify-between truncate">
+              <p>
+                DJ Frazzo
+              </p>
+              <p class="text-[3.5cqw] leading-[4cqw] font-light text-white/80 text-nowrap truncate">
+                next hyperlinked just dropped i better c u there!!
+              </p>
+            </div>
+            <span class="font-regular text-[3.5cqw] text-nowrap ">
+              4:42 PM
+            </span>
+          </div>
+          <div class="absolute h-[6.7%] top-[52.2%] left-[7%] right-[7%]
+          font-medium text-[4.5cqw] leading-none px-[3%] py-[2%] flex gap-[3%] items-baseline
+          ">
+            <img src="/iMessage.png" class="self-stretch">
+            <div class="flex flex-col  h-full w-full justify-between truncate">
+              <p>
+                LAVAGXRL
+              </p>
+              <p class="text-[3.5cqw] leading-[4cqw] font-light text-white/80 text-nowrap truncate">
+                sooooo excited for my next set at hyperlinked!!
+              </p>
+            </div>
+            <span class="font-regular text-[3.5cqw] text-nowrap ">
+              4:35 PM
+            </span>
+          </div>
           <div class="absolute h-[13%] bottom-[16.1%] left-[7%] right-[7%] flex justify-center items-center">
             <div
-              class="@container relative w-full h-[52%] m-[6.1%] flex items-center justify-end bg-gradient-to-b from-black to-[#1f1f1f] rounded-[5%/30%] p-[1.5px] border border-white/30 overflow-hidden">
-              <span class="slide-text mr-[10%] text-[10cqi] text-transparent whitespace-nowrap max-w-full select-none
+              class=" relative w-full h-[52%] m-[6.1%] flex items-center justify-end bg-gradient-to-b from-black to-[#1f1f1f] rounded-[5%/30%] p-[1.5px] border border-white/30 overflow-hidden">
+              <span class="slide-text mr-[10%] text-[7.5cqi] text-transparent whitespace-nowrap max-w-full select-none
                            bg-clip-text bg-size-[200%_auto] bg-linear-[to_left,#4d4d4d_0%,#4d4d4d_40%,white_50%,#4d4d4d_60%,#4d4d4d_100%] animate-[shimmer_3s_linear_infinite] transition-opacity duration-300
             ">slide to rsvp</span>
             </div>
@@ -367,6 +423,101 @@
               max="100">
             <!-- before:bg-clip-text -->
             <!-- before:absolute before:left-[70px] before:self-center before:content-['slide_to_unlock'] before:text-transparent before:z-1 before:text-[1.2rem] before:bg-clip-text before:bg-linear-[to_left,#4d4d4d_0%,#4d4d4d_40%,white_50%,#4d4d4d_60%,#4d4d4d_100%] before:w-[400px] before:animate-[shimmer_3s_linear_infinite] -->
+          </div>
+        </div>
+        <div class="w-9 text-base [writing-mode:sideways-rl] flex justify-around">
+          <span>52 church st</span>
+          <span>cambridge, ma</span>
+        </div>
+      </div>
+
+      <!-- PREVIOUS EVENTS -->
+      <div
+        class="absolute top-[max(calc((var(--top-lines)+4)*var(--text-base--line-height)+40rem),calc(100svh+(var(--top-lines)-1.6)*var(--text-base--line-height)))] w-xl text-three-quarters text-nowrap">
+        <p class="select-text text-base flex justify-center">⌄ ⌄ ⌄ ⌄ ⌄ previous events ⌄ ⌄ ⌄ ⌄ ⌄</p>
+        <br aria-hidden="true">
+        <div class="grid grid-cols-[min-content_auto] gap-x-4 justify-items-start">
+          <div class="select-text">2026.2.28</div>
+          <div class="flex items-center gap-2 w-full min-w-0">
+            <span class="select-text">v3 - hyperdrive</span>
+            <span class="flex-1 overflow-hidden" aria-hidden="true">
+              . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            </span>
+            <span>
+              <!-- <span class="relative">
+                <span aria-hidden="true">dj sets,</span>
+                <span class="absolute left-0 select-text text-shadow-none">
+                  <a href="https://link.djfrazzo.com/hyperlinked-v2-videos" target="_blank"
+                    class="pointer-events-auto underline">dj
+                    sets</a>
+                </span>
+              </span> -->
+              <span>
+                <span class="relative">
+                  <span aria-hidden="true">photos</span>
+                  <span class="absolute left-0 select-text text-shadow-none">
+                    <a href="https://link.djfrazzo.com/hyperlinked-v3-photos" target="_blank"
+                      class="pointer-events-auto underline">
+                      photos
+                    </a>
+                  </span>
+                </span>
+              </span>
+          </div>
+
+          <div class="select-text">2026.1.31</div>
+          <div class="flex items-center gap-2 w-full min-w-0">
+            <span class="select-text">v2 - hyperLinkedin</span>
+            <span class="flex-1 overflow-hidden" aria-hidden="true">
+              . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            </span>
+            <span>
+              <span class="relative">
+                <span aria-hidden="true">dj sets,</span>
+                <span class="absolute left-0 select-text text-shadow-none">
+                  <a href="https://link.djfrazzo.com/hyperlinked-v2-videos" target="_blank"
+                    class="pointer-events-auto underline">dj
+                    sets</a>
+                </span>
+              </span>
+              <span>
+                <span class="relative">
+                  <span aria-hidden="true">photos</span>
+                  <span class="absolute left-0 select-text text-shadow-none">
+                    <a href="https://link.djfrazzo.com/hyperlinked-v2-photos" target="_blank"
+                      class="pointer-events-auto underline">
+                      photos
+                    </a>
+                  </span>
+                </span>
+              </span>
+          </div>
+
+          <div class="select-text">2025.11.15</div>
+          <div class="flex items-center gap-2 w-full min-w-0">
+            <span class="select-text">v1</span>
+            <span class="flex-1 overflow-hidden" aria-hidden="true">
+              . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+            </span>
+            <span>
+              <span class="relative">
+                <span aria-hidden="true">dj sets,</span>
+                <span class="absolute left-0 select-text text-shadow-none">
+                  <a href="https://link.djfrazzo.com/hyperlinked-v1-videos" target="_blank"
+                    class="pointer-events-auto underline">dj
+                    sets</a>
+                </span>
+              </span>
+              <span class="relative">
+                <span aria-hidden="true">photos</span>
+                <span class="absolute left-0 select-text text-shadow-none">
+                  <a href="https://link.djfrazzo.com/hyperlinked-v1-photos" target="_blank"
+                    class="pointer-events-auto underline">
+                    photos
+                  </a>
+                </span>
+              </span>
+            </span>
           </div>
         </div>
       </div>
@@ -523,7 +674,7 @@
 
   <!-- LINE EFFECT -->
   <!-- A pattern that repeats every 1px vertically -->
-  <div class="hidden z-4 pointer-events-none fixed top-0 opacity-15 mix-blend-soft-light overflow-hidden h-lvh">
+  <div class="z-4 pointer-events-none fixed top-0 opacity-10 mix-blend-soft-light overflow-hidden h-lvh">
     <svg class="h-[1614px] w-lvw" xmlns="http://www.w3.org/2000/svg" height="807" viewBox="0 0 800 807"
       preserveAspectRatio="none">
       <defs>
