@@ -101,7 +101,6 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
 
   --top-lines: 4;
   --hidden-top-lines: 3;
-  --min-lines: 39;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
   --font-cyber: "Orbitron", "Inter Tight", sans-serif
@@ -110,9 +109,7 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
 @media (max-width: 1536px) {
 
   /* For small computers */
-  html {
-    --min-lines: 37;
-  }
+  html {}
 }
 
 @media (max-width: 768px) {
@@ -122,7 +119,6 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
-    --min-lines: 39;
   }
 }
 
@@ -134,7 +130,6 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
     /* --hidden-top-lines: 0; */
-    --min-lines: 40;
   }
 }
 
