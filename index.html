@@ -176,7 +176,7 @@
             ">slide to rsvp</span>
             </div>
 
-            <input type="range"
+            <input type="range" autocomplete="off"
               class="slideToUnlock absolute appearance-none w-full h-full p-[7.2%] pointer-events-none" value="0"
               max="100">
           </div>
@@ -317,7 +317,6 @@
     const unlockSlider = document.querySelector("input[type=\"range\"].slideToUnlock")
     const hideSlideTextThreshold = 10;
     let isSlideTextHidden = false;
-    let isSliderMoving = false;
 
     unlockSlider.addEventListener("input", function () {
       onSliderChange(this.value);
@@ -327,9 +326,10 @@
     unlockSlider.onmousedown = onSliderPressed;
     unlockSlider.ontouchstart = onSliderPressed;
 
-    if (!isSliderMoving && unlockSlider.value != 0) {
-      unlockSlider.value = 0;
-    }
+    window.onload = function () {
+      var slider = document.querySelector("input[type=\"range\"].slideToUnlock");
+      slider.value = 0;
+    };
 
     function onSliderChange(value) {
       if (value == 100) {
@@ -346,15 +346,12 @@
           if (unlockSlider.value != 0) {
             unlockSlider.value = value--;
             updateSlideTextOpacity(value);
-          } else {
-            isSliderMoving = false;
           }
         }, 1);
       }
     }
 
     function onSliderPressed() {
-      isSliderMoving = true;
       clearInterval(document.init);
     }
 
@@ -369,7 +366,6 @@
     }
 
     function unlock() {
-      isSliderMoving = false;
       location.href = "https://link.djfrazzo.com/hyperlinked-touch";
     }
   </script>
