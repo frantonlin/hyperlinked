@@ -326,6 +326,11 @@
     unlockSlider.onmousedown = onSliderPressed;
     unlockSlider.ontouchstart = onSliderPressed;
 
+    window.onpageshow = () => {
+      unlockSlider.value = 0;
+      updateSlideTextOpacity(0);
+    };
+
     function onSliderChange(value) {
       if (value == 100) {
         unlock();
