@@ -329,7 +329,7 @@
     window.onpageshow = (event) => {
       if (event.persisted) {
         unlockSlider.value = 0;
-        isSlideTextHidden = false;
+        updateSlideTextOpacity(0);
       }
     };
 
