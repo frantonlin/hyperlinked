@@ -328,8 +328,8 @@
 
     window.onpageshow = (event) => {
       if (event.persisted) {
-        unlockSlider.value = 0;
-        updateSlideTextOpacity(0);
+        unlockSlider.value = 99;
+        unlockSlider.dispatchEvent(new MouseEvent("mouseup"));
       }
     };
 
