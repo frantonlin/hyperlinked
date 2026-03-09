@@ -326,10 +326,11 @@
     unlockSlider.onmousedown = onSliderPressed;
     unlockSlider.ontouchstart = onSliderPressed;
 
-    window.onload = function () {
-      var slider = document.querySelector("input[type=\"range\"].slideToUnlock");
-      console.log("slider.value on load:", slider.value);
-      slider.value = 0;
+    window.onpageshow = (event) => {
+      if (event.persisted) {
+        slider.value = 0;
+        isSlideTextHidden = false;
+      }
     };
 
     function onSliderChange(value) {
