@@ -318,6 +318,10 @@
     const hideSlideTextThreshold = 10;
     let isSlideTextHidden = false;
 
+    window.onload = function () {
+      unlockSlider.value = 0;
+    };
+
     unlockSlider.addEventListener("input", function () {
       onSliderChange(this.value);
     });
