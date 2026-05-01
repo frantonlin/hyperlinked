@@ -4,11 +4,11 @@ body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  cursor: url("/cursor-real-finger_2-12.png") 2 12, auto;
+  cursor: url("/cursor-pointer_0-4.png") 0 4, auto;
 }
 
 a {
-  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
+  cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
 
 @keyframes scroll-text {
@@ -17,65 +17,22 @@ a {
   }
 
   100% {
-    transform: translateX(11.69rem);
+    transform: translateX(9.29rem);
   }
 }
 
-@keyframes shimmer {
-  0% {
-    background-position-x: 200%;
-  }
-
-  100% {
-    background-position-x: 0%;
-  }
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }
 
-@keyframes shimmer-pause {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  25% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-input[type="range"].slideToUnlock::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border-radius: 7px;
-  background: url("/slider-thumb.png");
+.sprout-gradient {
+  filter: brightness(70%);
+  background-color: hsla(349, 28%, 48%, 1);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle at 93.94321612254025% 73.59428146258503%, hsla(353, 44%, 21%, 1) 5%, transparent 72%), radial-gradient(circle at 19.052193607491855% 53.748405612244895%, hsla(11, 40%, 38%, 1) 7%, transparent 35%), radial-gradient(circle at 9.589529293381037% 83.72874149659864%, hsla(357, 56%, 29%, 1) 13%, transparent 63%), radial-gradient(circle at 60.27967223127036% 41.343537414965986%, hsla(57, 22%, 22%, 1) 30%, transparent 79%), radial-gradient(circle at 19.43062388193202% 24.651360544217688%, hsla(0, 61%, 43%, 1) 3%, transparent 37%), radial-gradient(circle at 70.59497149837134% 62.222045068027214%, hsla(339, 19%, 77%, 1) 13%, transparent 57%), radial-gradient(circle at 71.14126788908766% 14.892644557823129%, hsla(348, 53%, 37%, 1) 13%, transparent 57%), radial-gradient(circle at 54.71867365635179% 85.36989795918367%, hsla(12, 29%, 71%, 1) 13%, transparent 39%), radial-gradient(circle at 91.84893504025045% 29.970238095238095%, hsla(324, 28%, 30%, 1) 13%, transparent 44%);
+  background-blend-mode: overlay, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  /* background: linear-gradient(#fafafa 0%, #dedede 50%, #cfcfcf 51%, #a3a3a3 100%); */
-  z-index: 1;
-  width: 26%;
-  height: 100%;
-  position: relative;
-  pointer-events: auto;
-  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
-}
-
-input[type="range"].slideToUnlock::-webkit-slider-runnable-track {
-  height: 90%;
-}
-
-input[type="range"].slideToUnlock::-moz-range-thumb {
-  border-width: 0;
-  border-radius: 7px;
-  background-image: url("/slider-thumb.png");
-  background-size: cover;
-  background-position: center;
-  z-index: 1;
-  width: 24.8%;
-  height: 90%;
-  position: relative;
-  pointer-events: auto;
-  cursor: url("/cursor-real-finger-tap_13-16.png") 13 16, auto;
 }
 
 @theme {
@@ -89,8 +46,8 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
   --text-heading: 5.75rem;
   --text-heading--line-height: calc(3*var(--text-base--line-height));
 
-  --text-subhead: 3.16rem;
-  --text-subhead--line-height: calc(5/3*var(--text-base--line-height));
+  --text-subheading: 3.83rem;
+  --text-subheading--line-height: calc(2*var(--text-base--line-height));
 
   /* three quarters has base line height */
   --text-three-quarters: 1.43rem;
@@ -100,16 +57,21 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
   --text-half--line-height: calc(0.5*var(--text-base--line-height));
 
   --top-lines: 4;
-  --hidden-top-lines: 3;
+  --hidden-top-lines: 0;
+  --cta-button-lines: 3.3;
+  --min-lines: 39;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
-  --font-cyber: "Orbitron", "Inter Tight", sans-serif
+  --font-sprout: "Jacquarda Bastarda 9", serif;
 }
 
 @media (max-width: 1536px) {
 
   /* For small computers */
-  html {}
+  html {
+    --hidden-top-lines: 2;
+    --min-lines: 37;
+  }
 }
 
 @media (max-width: 768px) {
@@ -119,6 +81,8 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
+    --hidden-top-lines: 0;
+    --min-lines: 39;
   }
 }
 
@@ -129,7 +93,8 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
     font-size: 10px;
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
-    /* --hidden-top-lines: 0; */
+    --hidden-top-lines: 0;
+    --min-lines: 40;
   }
 }
 
@@ -139,7 +104,7 @@ input[type="range"].slideToUnlock::-moz-range-thumb {
   html {
     /* --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height)); */
-    /* --hidden-top-lines: 2; */
+    --hidden-top-lines: 0;
     /* --cta-button-lines: 3; */
   }
 }
