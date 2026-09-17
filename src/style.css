@@ -92,7 +92,6 @@ a {
     /* --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height)); */
     --hidden-top-lines: 0;
-    --cta-button-lines: 8;
     --previous-event-lines: 6;
     --min-lines: 44;
   }
