@@ -301,11 +301,21 @@
         </a>
       </h1>
 
+      <p class="
+        absolute text-nowrap text-base font-semibold z-1
+        top-[calc((var(--top-lines)+3)*var(--text-base--line-height))] blur-[0.03rem]
+        animate-[scroll-text_linear_6s_infinite] motion-reduce:animate-none" aria-hidden="true">
+        click to rsvp ^ click to rsvp ^ click to rsvp ^ click to
+        rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click
+        to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^
+        click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to rsvp ^ click to
+        rsvp ^ click to rsvp
+      </p>
+
       <!-- BODY TEXT -->
       <div
-        class="z-1 absolute w-[35.2rem] top-[calc((var(--top-lines)+5)*var(--text-base--line-height))] blur-[0.03rem]
+        class="z-1 absolute w-[35.2rem] top-[calc((var(--top-lines)+var(--cta-button-lines))*var(--text-base--line-height))] blur-[0.03rem]
                text-base font-semibold text-nowrap select-none text-shadow-[-3px_-3px_0_rgb(255,255,255),3px_-3px_0_rgb(255,255,255),3px_3px_0_rgb(255,255,255),-3px_3px_0_rgb(255,255,255)]">
-
         <div class="text-center">
           <p class="select-text"><span class="pr-[12.4rem]">a</span>retro-futuristic</p>
           <br aria-hidden="true">
@@ -354,10 +364,26 @@
 
         <br aria-hidden="true">
         <br aria-hidden="true">
-        <br aria-hidden="true">
+
+        <div>
+          <p class="select-text mx-auto px-[0.7rem]">
+            <span class="float-left text-left">
+              <span class="ml-[0rem]">saturday 10/17</span><br>
+              <span class="pl-[2.5rem]">9pm–2am, 21+</span>
+            </span>
+            <span class="float-right text-right">
+              <span class="pr-[0.4rem]">52 church st</span><br>
+              <span class="pr-[0.1rem]">cambridge, ma</span>
+            </span>
+          </p>
+          <br aria-hidden="true">
+          <br aria-hidden="true">
+          <br aria-hidden="true">
+          <p class="select-text pl-[3.3rem]">$15 cash cover, $10 before 10pm</p>
+        </div>
 
         <!-- PREVIOUS EVENTS -->
-        <div class="w-full text-three-quarters">
+        <div class="w-full text-three-quarters pt-[calc((var(--previous-event-lines))*var(--text-base--line-height))]">
           <p class="select-text text-base flex justify-center">⌄ ⌄ ⌄ ⌄ ⌄ previous events ⌄ ⌄ ⌄ ⌄ ⌄</p>
           <br aria-hidden="true">
           <div class="grid grid-cols-[min-content_auto] gap-x-4 justify-items-start">
