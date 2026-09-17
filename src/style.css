@@ -11,6 +11,16 @@ a {
   cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
 
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(11.69rem);
+  }
+}
+
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
@@ -34,8 +44,9 @@ a {
 
   --top-lines: 4;
   --hidden-top-lines: 0;
-  --cta-button-lines: 3;
-  --min-lines: 35;
+  --cta-button-lines: 7;
+  --previous-event-lines: 5;
+  --min-lines: 43;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
 }
@@ -45,7 +56,8 @@ a {
   /* For small computers */
   html {
     --hidden-top-lines: 2;
-    --min-lines: 32;
+    --previous-event-lines: 3;
+    --min-lines: 38;
   }
 }
 
@@ -57,7 +69,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
     --hidden-top-lines: 0;
-    --min-lines: 33;
+    --min-lines: 40;
   }
 }
 
@@ -69,7 +81,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
     --hidden-top-lines: 0;
-    --min-lines: 33;
+    --min-lines: 40;
   }
 }
 
@@ -80,6 +92,7 @@ a {
     /* --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height)); */
     --hidden-top-lines: 0;
-    /* --cta-button-lines: 3; */
+    --previous-event-lines: 6;
+    --min-lines: 44;
   }
 }
