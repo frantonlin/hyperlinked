@@ -5,6 +5,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   cursor: url("/cursor-pointer_0-4.png") 0 4, auto;
+  --animate-bounce-up: bounce-up 0.9s infinite;
 }
 
 a {
@@ -18,6 +19,50 @@ a {
 
   100% {
     transform: translateX(11.69rem);
+  }
+}
+
+@keyframes bounce-up {
+
+  0%,
+  100% {
+    transform: translateY(25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes scroll-text-1yr-lr {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(18.09rem);
+  }
+}
+
+@keyframes scroll-text-1yr-tb {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(18.09rem);
+  }
+}
+
+@keyframes scroll-text-1yr-bt {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-18.09rem);
   }
 }
 
@@ -42,11 +87,11 @@ a {
   --text-half: 0.91rem;
   --text-half--line-height: calc(0.5*var(--text-base--line-height));
 
-  --top-lines: 4;
+  --top-lines: 5;
   --hidden-top-lines: 0;
   --cta-button-lines: 7;
   --previous-event-lines: 5;
-  --min-lines: 43;
+  --min-lines: 44;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
 }
@@ -57,7 +102,7 @@ a {
   html {
     --hidden-top-lines: 2;
     --previous-event-lines: 3;
-    --min-lines: 38;
+    --min-lines: 39;
   }
 }
 
@@ -68,7 +113,7 @@ a {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
-    --hidden-top-lines: 0;
+    --hidden-top-lines: 1;
     --min-lines: 40;
   }
 }
@@ -85,12 +130,15 @@ a {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 400px) {
 
   /* For small mobile phones */
   html {
     /* --text-heading: 3.83rem;
     --text-heading--line-height: calc(2*var(--text-base--line-height)); */
+    font-size: 9px;
+    /* Safari is inconsistent with decimal line heights, so manually round 9px * 1.87 = 16.93px */
+    --text-base--line-height: 16.83px;
     --hidden-top-lines: 0;
     --previous-event-lines: 6;
     --min-lines: 44;
