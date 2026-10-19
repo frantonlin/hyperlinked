@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  font-size: 21px;
+  --text-base--line-height: 39.5px;
+}
+
 body {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
@@ -89,7 +94,7 @@ a {
 
   --top-lines: 5;
   --hidden-top-lines: 0;
-  --cta-button-lines: 7;
+  --cta-button-lines: 5;
   --previous-event-lines: 5;
   --min-lines: 44;
 
