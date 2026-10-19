@@ -118,7 +118,7 @@ a {
     font-size: 14px;
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
-    --hidden-top-lines: 1;
+    --hidden-top-lines: 2.1;
     --min-lines: 40;
   }
 }
@@ -130,7 +130,7 @@ a {
     font-size: 10px;
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
-    --hidden-top-lines: 0;
+    --hidden-top-lines: 0.3;
     --min-lines: 40;
   }
 }
