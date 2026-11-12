@@ -12,60 +12,6 @@ a {
   cursor: url("/cursor-hand_24-4.png") 24 4, auto;
 }
 
-@keyframes scroll-text {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(11.69rem);
-  }
-}
-
-@keyframes bounce-up {
-
-  0%,
-  100% {
-    transform: translateY(25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
-@keyframes scroll-text-1yr-lr {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(18.09rem);
-  }
-}
-
-@keyframes scroll-text-1yr-tb {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(18.09rem);
-  }
-}
-
-@keyframes scroll-text-1yr-bt {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-18.09rem);
-  }
-}
-
 @theme {
   --color-link-blue: #0000ee;
   --color-link-purple: #551a8b;
@@ -88,10 +34,10 @@ a {
   --text-half--line-height: calc(0.5*var(--text-base--line-height));
 
   --top-lines: 5;
-  --hidden-top-lines: 0;
-  --cta-button-lines: 7;
-  --previous-event-lines: 5;
-  --min-lines: 44;
+  --hidden-top-lines: 1;
+  --cta-button-lines: 6;
+  --previous-event-lines: 3;
+  --min-lines: 37;
 
   --font-hyperlinked: "Inter Tight", sans-serif;
 }
@@ -102,7 +48,7 @@ a {
   html {
     --hidden-top-lines: 2;
     --previous-event-lines: 3;
-    --min-lines: 39;
+    --min-lines: 36;
   }
 }
 
@@ -114,7 +60,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 14px * 1.87 = 26px */
     --text-base--line-height: 26px;
     --hidden-top-lines: 1;
-    --min-lines: 40;
+    --min-lines: 37;
   }
 }
 
@@ -126,6 +72,7 @@ a {
     /* Safari is inconsistent with decimal line heights, so manually round 10px * 1.87 = 19px */
     --text-base--line-height: 19px;
     --hidden-top-lines: 0;
+    --previous-event-lines: 5;
     --min-lines: 40;
   }
 }
@@ -139,8 +86,5 @@ a {
     font-size: 9px;
     /* Safari is inconsistent with decimal line heights, so manually round 9px * 1.87 = 16.93px */
     --text-base--line-height: 16.83px;
-    --hidden-top-lines: 0;
-    --previous-event-lines: 6;
-    --min-lines: 44;
   }
 }
